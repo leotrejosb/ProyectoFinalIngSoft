@@ -2,11 +2,13 @@ package com.plan.turismo.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "categorias")
 public class Categoria {
@@ -21,40 +23,6 @@ public class Categoria {
 
     @OneToMany(mappedBy = "categoria",cascade = CascadeType.ALL)
     @JsonIgnore
-    private Set<Examen> examenes = new LinkedHashSet<>();
+    private Set<Paquete> paquetes = new LinkedHashSet<>();
 
-    public Long getCategoriaId() {
-        return categoriaId;
-    }
-
-    public void setCategoriaId(Long categoriaId) {
-        this.categoriaId = categoriaId;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public Set<Examen> getExamenes() {
-        return examenes;
-    }
-
-    public void setExamenes(Set<Examen> examenes) {
-        this.examenes = examenes;
-    }
-
-    public Categoria() {
-    }
 }

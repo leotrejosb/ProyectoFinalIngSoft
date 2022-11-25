@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProyectoFinalIngSoft.iml" filepath="$PROJECT_DIR$/.idea/ProyectoFinalIngSoft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Proyecto Final/agencia/agencia.iml" filepath="$PROJECT_DIR$/../Proyecto Final/agencia/agencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plan-turismo-backend/plan-turismo-backend.iml" filepath="$PROJECT_DIR$/plan-turismo-backend/plan-turismo-backend.iml" />
+    </modules>
+  </component>
+</project>
