@@ -8,6 +8,6 @@ import java.util.Set;
 
 public interface ServiciosRepo extends JpaRepository<Servicio,Long> {
 
-    Set<Servicio> findByExamen(Paquete paquete);
+    Set<Servicio> findByPaquete(Paquete paquete);
 
 }

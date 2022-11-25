@@ -42,7 +42,7 @@ public class ServiciosServiceImpl implements ServiciosService {
 
     @Override
     public Set<Servicio> obtenerServiciosDelPaquete(Paquete paquete) {
-        return serviciosRepo.findByExamen(paquete);
+        return serviciosRepo.findByPaquete(paquete);
     }
 
     @Override
